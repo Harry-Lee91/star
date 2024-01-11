@@ -1,0 +1,315 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="스타리무진, 카니발, 하이리무진, 특장, (주)스타리무진">
+    <meta name="description" content="(주)스타리무진">
+    <meta name="author" content="(주)스타리무진">
+    <meta http-equiv="Subject" content="(주)스타리무진" />
+    <meta http-equiv="X-UA-Compatible" content="chrome" />
+    <meta http-equiv="Author" content="최진식/이효찬" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta property="og:url" content="도메인 구축 후 설정">
+    <meta property="og:title" content="(주)스타리무진">
+    <meta property="og:type" content="website">
+    <!-- SNS 공유시 보여질 이미지 -->
+    <meta property="og:image" content="썸네일이미지">
+    <!-- SNS 공유시 보여질 설명 -->
+    <meta property="og:description" content="공유시 보여질 설명">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media-about.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <script src="./js/cusMain.js"></script>
+    <script src="./js/scroll.js"></script>
+
+
+
+
+
+    <title>(주)스타리무진</title>
+    </head>
+    <style>
+
+        body {
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none
+            
+        }
+    
+        
+
+
+        #sec03 ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            z-index: 1;
+        }
+
+        #sec03 ul li{
+            width: 250%;
+            
+        }
+
+        #sec03 #last-img img{
+            border: 1px solid #000;
+            margin-bottom: 30px;
+        
+        }
+
+        #sec03 #last-img img:nth-child(4),#sec03 #last-img img:nth-child(5){
+            margin-bottom: 0;
+        }
+
+        @media (max-width:450px) {
+            #sec02 {
+                display: block;
+                text-align: center;
+            }
+
+            #sec02 .img-box01{
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+
+            #sec02 .about-txt{
+                width: 100%;
+            }
+
+            #sec02 .about-txt h3{
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+
+            #sec02 .about-txt p{
+                font-size: 12px;
+            }
+
+            #sec03{
+                margin-bottom: 100px;
+            }
+            .first-footer{
+            font-size: 10px;
+            margin: 0 auto;
+        }
+
+        .last-footer{
+            display: none;
+        }
+        }
+
+        .fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    }
+
+    .visible {
+    opacity: 1;
+    }
+
+
+    </style>
+
+
+    <body>
+    <div id="wrapper">
+        <!-- 헤더부분은 건들지 말 것 -->
+        <h1>(주)스타리무진</h1>
+        <header id="header">
+            <!-- 데스크탑 -->
+            <div class="desk">
+                <div class="logo">
+                    <img src="./img2/logo_gold.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li>홈</li>
+                        <li>회사소개</li>
+                        <li>모델</li>
+                        <li>커스텀</li>
+                        <li>가상견적</li>
+                        <li>유튜브</li>
+                        <li>갤러리</li>
+                        <li>고객지원</li>
+                        <li>
+                            <div class="search-container">
+                            <input type="text" placeholder="">
+                            <button>
+                                <!-- <img src="./img/main-srch.png" alt="" style="width: 15px; background: inherit;"> -->
+                            </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2>
+                        The One and Only Carnival Hi Limousine
+                    </h2>
+                </nav>
+                <div class="origin">
+                    <img src="./img2/origin.png" alt="">
+                </div>
+                <div class="phone">
+                    <img src="./img2/phone.png" alt="">
+                    <p>1588-8216</p>
+                </div>
+            </div>
+
+            <!-- 모바일 헤더 -->
+            <div class="mobile">
+                <div class="logoM">
+                    <img src="./img2/logo_gold.png" alt="">
+                </div>
+                <!-- <h2>The One and Only Carnival Hi Limousine</h2> -->
+                <div id="navbtn">
+                    <img src="./img2/navbtn.png" alt="" onclick="navBtn();">
+                </div>
+                <div id="navbtnC">
+                    <img src="./img2/navbtn.png" alt="" onclick="navBtnC();">
+                </div>
+            </div>
+            <nav id="navM">
+                <ul>
+                    <li>홈</li>
+                    <li>회사소개</li>
+                    <li>모델</li>
+                    <li>커스텀</li>
+                    <li>가상견적</li>
+                    <li>유튜브</li>
+                    <li>갤러리</li>
+                    <li>고객지원</li>
+                </ul>
+            </nav>
+        </header>
+    <!-- 헤더 끝 -->
+
+
+        <section id="sec01" class="fade-in">
+            <div class="img-box">
+                <img src="./img2/About1.png" alt="">
+            </div>
+            <h2 class="h2txt">
+                About Star Limousine
+            </h2>
+        </section>
+
+        <section id="sec02"  style="padding-top: 50px;" class="sec02-main">
+            <div class="img-box01">
+                <img src="./img2/About2.png" alt="">
+            </div>
+            <div class="about-txt">
+                <h3 class="txt-h3">혁신의 기업</h3>
+                <p>
+                    (주)스타리무진은 2020년 8월 1일에 설립 된 카니발 하이리무진 커스텀 전문업체로서 <br>
+                    무수히 많은 경험을 토대로 2022년 4월 4세대 독자적인 카니발 하이리무진을 성공적으로 <br>
+                    출시한 것을 시작으로 소비자들에게 보다 행복하고 더 나은 삶을 제공하기 위해 카니발 <br>
+                    하이리무진의 공간을 더욱 편안하고 안저하게 만들 수 있는 지속가능한 새로운 솔루션을 <br>
+                    항상 개발하고  있습니다. <br>
+                    많은 성원 부탁드립니다.
+                </p>
+                <h4>Since 2020</h4>
+            </div>
+        </section>
+
+        <section id="sec02" class="fade-in" style="border: none;">
+            <div class="img-box01">
+                <img src="./img2/About3.png" alt="">
+            </div>
+            <div class="about-txt">
+                <h3>신뢰할 수 있는 브랜드</h3>
+                <p>
+                    디 오리진(The Origin)은 스타리무진의 자부심과 기술력이 결합된 독자적인 브랜드 <br>
+                    입니다. <br>
+                    스타리무진의 엔지니어들은 협업과 혁신을 통해 편리하고 안적하며 최고의 품질을 지닌 <br>
+                    결과물을 만들기 위해 스마트 솔로션을 도입하면서 미래지향적인 차량을 개발해 나가고 <br>
+                    있습니다. <br>
+                    스타리무진의 차량은 최고의 업체들과 협력하여 설계 및 제작하고 있으며 제품의 품질, 성능 <br>
+                    및 수명을 보장하기 위하여 엄격한 절차에 따라 테스트 및 점검을 시행합니다. <br>
+                    새로운 제품이나 제품 개선 방식에 관하여 제안하실 점이 있으시다면 언제든 여러분의 <br>
+                    아이디어를 공유해주세요!
+                </p>
+            </div>
+        </section>
+
+        <section id="sec03" class="fade-in">
+            <h2 id="open">인증서 &nbsp; <span onclick="lastOpen()">▼</span></h2>
+            <h2 id="close">인증서 &nbsp; <span onclick="lastClose()">▲</span></h2>
+            <div id="last-img">
+                <ul id="last-sub">
+                    <li>
+                        <a href="./img2/2열 시트 양산 신뢰성 시험-1.pdf" target="_blank"><img src="./img2/2열 시트 양산 신뢰성 시험-1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="./img2/3열 시트 양산 신뢰성 시험-1.pdf 시트 양산 신뢰성 시험-1.pdf" target="_blank"><img src="./img2/3열 시트 양산 신뢰성 시험-1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="./img2/시트 강도시험-1.pdf" target="_blank"><img src="./img2/시트 강도시험-1.png" alt=""></a>
+
+                    </li>
+                    <li>
+                        <a href="./img2/천정 강도시험-1.pdf" target="_blank"><img src="./img2/천정 강도시험-1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="./img2/제작자등 등록증-1.pdf" target="_blank"><img src="./img2/제작자등 등록증-1.png" alt=""></a>
+                    </li>
+                </ul>        
+            </div>
+        </section>
+
+        <!-- footer부분 시작 -->
+        <footer id="footer" >
+            <div class="footer-txt">
+                <div class="first-footer">
+                    <h2>(주)스타리무진</h2>
+                    <ul>
+                        <li>회사명:(주)스타리무진</li>
+                        <li>대표자:김민수</li>
+                        <li>주소:인천 서구 백범로 830 3층</li>
+                        <li>이메일:niziume@naver.com</li>
+                        <li>전화번호:1588-8216</li>
+                        <li>팩스번호:032-573-9773</li>
+                        <li>사업자등록번호:614-81-06215</li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="last-footer">
+                    <h2>바로가기</h2>
+                    <ul>
+                        <li>홈</li>
+                        <li>회사소개</li>
+                        <li>모델</li>
+                        <li>커스텀</li>
+                        <li>가상견적</li>
+                        <li>갤러리</li>
+                        <li>고객지원</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="txt">
+                <p>ⓒ 2024 Star Limousine INC. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    </body>
+    </html>
+
+    </div>
+
+    <script src="./js/about.js"></script>
+
+
+
+
+
+    </body>
+
+    </html>

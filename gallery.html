@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keyword" content="스타리무진, 카니발, 하이리무진, 특장, (주)스타리무진">
+<meta name="description" content="(주)스타리무진">
+<meta name="author" content="(주)스타리무진">
+<meta http-equiv="Subject" content="(주)스타리무진" />
+<meta http-equiv="X-UA-Compatible" content="chrome" />
+<meta http-equiv="Author" content="최진식/이효찬" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta property="og:url" content="도메인 구축 후 설정">
+<meta property="og:title" content="(주)스타리무진">
+<meta property="og:type" content="website">
+<!-- SNS 공유시 보여질 이미지 -->
+<meta property="og:image" content="썸네일이미지">
+<!-- SNS 공유시 보여질 설명 -->
+<meta property="og:description" content="공유시 보여질 설명">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/font.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/media-about.css">
+<link rel="stylesheet" href="./css/about.css">
+<link rel="stylesheet" href="./css/gallery.css">
+<script src="./js/cusMain.js"></script>
+<title>(주)스타리무진</title>
+</head>
+
+
+
+<body>
+
+    <div id="wrapper">
+        <!-- 헤더부분은 건들지 말 것 -->
+        <h1>(주)스타리무진</h1>
+        <header id="header">
+            <!-- 데스크탑 -->
+            <div class="desk">
+                <div class="logo">
+                    <img src="./img2/logo_gold.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li>회사소개</li>
+                        <li>모델</li>
+                        <li>커스텀</li>
+                        <li>가상견적</li>
+                        <li>유튜브</li>
+                        <li>갤러리</li>
+                        <li>고객지원</li>
+                        <li>
+                            <div class="search-container">
+                              <input type="text" placeholder="">
+                              <button>
+                                <!-- <img src="./img/main-srch.png" alt="" style="width: 15px; background: inherit;"> -->
+                              </button>
+                            </div>
+                          </li>
+                    </ul>
+                    <h2>
+                        The One and Only Carnival Hi Limousine
+                    </h2>
+                </nav>
+                <div class="origin">
+                    <img src="./img2/origin.png" alt="">
+                </div>
+                <div class="phone">
+                    <img src="./img2/phone.png" alt="">
+                    <p>1588-8216</p>
+                </div>
+            </div>
+    
+            <!-- 모바일 헤더 -->
+            <div class="mobile">
+                <div class="logoM">
+                    <img src="./img2/logo_gold.png" alt="">
+                </div>
+                <!-- <h2>The One and Only Carnival Hi Limousine</h2> -->
+                <div id="navbtn">
+                    <img src="./img2/navbtn.png" alt="" onclick="navBtn();">
+                </div>
+                <div id="navbtnC">
+                    <img src="./img2/navbtn.png" alt="" onclick="navBtnC();">
+                </div>
+            </div>
+            <nav id="navM">
+                <ul>
+                    <a href="#"><li>홈</li></a>
+                    <a href="#"><li>회사소개</li></a>
+                    <a href="#"><li>모델</li></a>
+                    <a href="#"><li>커스텀</li></a>
+                    <a href="#"><li>가상견적</li></a>
+                    <a href="#"><li>유튜브</li></a>
+                    <a href="#"><li>갤러리</li></a>
+                    <a href="#"><li>고객지원</li></a>
+                </ul>
+            </nav>
+        </header>
+    <!-- 헤더 끝 -->
+
+    <!-- sec01 위쪽 이미지 -->
+
+    <section id="sec01">
+        <div class="img-box">
+            <img src="./img2/slide07.png" alt="">
+        </div>
+        <h2 class="h2txt">
+            Gallery
+        </h2>
+    </section>
+
+    <!-- dropdown menu bar -->
+    <section id="sec02">
+        <ul class="menu">
+            <li>
+                <a href="#">갤러리 메뉴</a>
+                <ul class="submenu">
+                    <li><a href="#">최근 갤러리</a></li>
+                    <li><a href="#">모든 갤러리</a></li>
+                    <li class="category">
+                        <!-- <h2 id="open">인증서 &nbsp; <span onclick="lastOpen()">▼</span></h2>
+                        <h2 id="close">인증서 &nbsp; <span onclick="lastClose()">▲</span></h2> -->
+                        <li>
+                            <a href="#">카테고리 <span id="ctgr">▼</span></a>
+                            <ul class="subsubmenu">
+                                <li><a href="#">차박</a></li>
+                                <li><a href="#">디오리진</a></li>
+                                <li><a href="#">뉴스</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                    
+                    
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+        <section id="sec03">
+            <!-- <h2 id="open">Gallery &nbsp;&nbsp;&nbsp; <span onclick="lastOpen()">▼</span></h2>
+            <h2 id="close">Gallery &nbsp;&nbsp;&nbsp; <span onclick="lastClose()">▲</span></h2> -->
+            <!-- <div id="last-img01">
+
+                
+                img popup trial
+                <img src="./img/About1.png" width="295px" height="295px" title="클릭하시면 원본크기로 보실 수 있습니다."
+                style="cursor: pointer;" onclick="doImgPop('./img/About1.png')"  />
+                <img src="./img/About2.png" width="295px" height="295px" title="클릭하시면 원본크기로 보실 수 있습니다."
+                style="cursor: pointer;" onclick="doImgPop('./img/About2.png')"  />
+                <img src="./img/About3.png" width="295px" height="295px" title="클릭하시면 원본크기로 보실 수 있습니다."
+                style="cursor: pointer;" onclick="doImgPop('./img/About3.png')"  />
+            </div> -->
+
+            <ul style="cursor: pointer;">
+                <li>
+                    <img src="./img2/About1.png" alt="" onclick="popUp1()">
+                </li>
+                <li>
+                    <img src="./img2/About1.png" alt="" onclick="popUp2()">
+                </li>
+                <li>
+                    <img src="./img2/About1.png" alt="" onclick="popUp3()">
+                </li>
+                <li>
+                    <img src="./img2/About1.png" alt="" onclick="popUp4()">
+                </li>
+                <li>
+                    <img src="./img2/About1.png" alt="" onclick="popUp5()">
+                </li>
+                <li>
+                    <img src="./img2/About1.png" alt="" onclick="popUp6()">
+                </li>
+            </ul>
+        </section>
+
+        <div id="popup">
+
+            <div class="down_btn">
+                <a href="다운로드할 이미지가 들어있는 경로" download><button>이미지 원본 다운로드</button></a>
+             </div>
+    
+            <div class="pop-close">
+                <img src="./img2/X.png" alt="" onclick="popClose()">
+            </div>
+            <div class="pop-img">
+                <div id="img-01">
+                    <img src="./img2/About1.png" alt="">
+                </div>
+                <div id="img-02">
+                    <img src="./img2/About1.png"  alt="">
+                </div>
+                <div id="img-03">
+                    <img src="./img2/About1.png"  alt="">
+                </div>
+                <div id="img-04">
+                    <img src="./img2/About1.png"  alt="">
+                </div>
+                <div id="img-05">
+                    <img src="./img2/About1.png"  alt="">
+                </div>
+                <div id="img-06">
+                    <img src="./img2/About1.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    
+</body>
+
+<script src="./js/gallery.js"></script>
+<script>
+    onclick="window.open(this.src)"
+</script>
+</html>
