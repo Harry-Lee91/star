@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    z-index: 22;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ul,ol,li{
+    list-style:none;
+}
+img{
+    width:100%;
+    vertical-align:bottom;
+}
+a{
+    color:inherit;
+    text-decoration:none;    
+}
+address{
+    font-style:normal;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:inherit;
+    font-size:inherit;
+}
+strong{
+    font-weight:inherit;
+}
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+
+
+*{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}

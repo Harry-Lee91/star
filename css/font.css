@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'D-DIN';
+    src: url(../Font/D-DIN.otf);
+}
+
+@font-face {
+    font-family: 'D-DINCondensed';
+    src: url(../Font/D-DINCondensed.otf);
+}
+
+@font-face {
+    font-family: 'D-DINExp';
+    src: url(../Font/D-DINExp.otf);
+}
+
+@font-face {
+    font-family: 'D-DINExp-Bold';
+    src: url(../Font/D-DINExp-Bold.otf);
+}
+
+@font-face {
+    font-family: 'D-DINExp-Italic';
+    src: url(../Font/D-DINExp-Italic.otf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Black';
+    src: url(../Font/NotoSansKR-Black.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Bold';
+    src: url(../Font/NotoSansKR-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-ExtraBold';
+    src: url(../Font/NotoSansKR-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-ExtraLight';
+    src: url(../Font/NotoSansKR-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Light';
+    src: url(../Font/NotoSansKR-Light.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Medium';
+    src: url(../Font/NotoSansKR-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    src: url(../Font/NotoSansKR-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-SemiBold';
+    src: url(../Font/NotoSansKR-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR-VariableFont_wght';
+    src: url(../Font/NotoSansKR-VariableFont_wght.ttf);
+}

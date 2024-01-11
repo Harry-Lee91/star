@@ -1,0 +1,129 @@
+
+body{
+    height: 5000px;
+}
+
+#sec01 .img-box img{
+    position: relative;
+    width: 1680px;
+    height: 757px;
+}
+
+.menu {
+width: 800px;
+overflow: hidden;
+/* margin: 150px auto; */
+position: relative;
+z-index: 999;
+
+}
+
+.menu > li {
+width: 20%; /*20*5=100%*/
+float: left;
+text-align: center;
+line-height: 40px;
+background-color: #737477;
+}
+
+.menu a {
+color: #fff;
+}
+
+.submenu > li {
+line-height: 50px;
+background-color: #94a9ff;
+font-size: 40px;
+}
+
+.submenu {
+height: 0; /*ul의 높이를 안보이게 처리*/
+overflow: hidden;
+}
+
+.menu > li:hover {
+background-color: #94a9ff;
+height: auto;
+z-index: 99;
+transition-duration: 0.2s;
+}
+
+.menu > li:hover .submenu {
+height: 300px; /*서브메뉴 li한개의 높이 50*5*/
+transition-duration: 1s;
+z-index: 99;
+}
+
+#sec02 .category{
+line-height: 20px;
+}
+
+#sec02 .subsubmenu{
+font-size: 10px;
+line-height: 30px;
+color: black;
+
+}
+
+#sec03{
+    position: absolute;
+    top: 1000px;
+    left: 20%;
+}
+
+#sec03 ul{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+#sec03 ul li{
+margin-right: 20px;
+margin-bottom: 30px;
+z-index: 3;
+}
+
+#popup{
+display: none;
+background-color: rgba(0, 0, 0, 0.4);
+width: 100%;
+height: 650px;
+top: 800px;
+position: absolute;
+z-index: 999;
+}
+
+.pop-img{
+position: absolute;
+width: 1000px;
+top: 20%;
+left: 25%;
+}
+
+.pop-close{
+width: 30px;
+position: absolute;
+top: 10%;
+right:5%;
+}
+
+.down_btn button{
+    background: #222;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    padding: 2px 16px;
+    line-height: 20px;
+    border-radius:30px;
+    border:none;
+    letter-spacing:-1px;
+}
+.down_btn button:hover{
+   box-shadow:1px 1px 4px rgba(0,0,0,0.4);
+
+
+}
+
+#popup .down_btn{
+    margin-left: 1250px;
+    margin-top: 50px;
+}

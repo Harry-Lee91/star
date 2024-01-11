@@ -1,0 +1,91 @@
+@charset 'utf-8';
+
+@media (max-width:450px) {
+    /* 모바일 헤더 */
+
+   .desk{
+    display: none;
+   }
+
+   .mobile{
+    position: static;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+   }
+
+   .mobile .logoM{
+    display: block;
+    width: 50px;
+    margin-right: 330px;
+   }
+
+   .mobile #navbtn{
+    display: block;
+    width: 25px;
+    margin-top: 5px;
+   }
+
+   .mobile #navbtnC{
+    width: 25px;
+    margin-top: 5px;
+   }
+
+   #navM{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    padding: 50px;
+   }
+
+   #navM ul li{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: right;
+    border-bottom: 1px solid #dadada;
+   }
+
+   #navM ul li:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+    }
+
+    .mobile h2{
+    display: block;
+    color: #fff;
+    }
+
+
+
+    /* 모바일 sec01 시작 */
+
+
+
+    #sec01 .h2txt{
+    /* position: absolute; */
+    top: 70%;
+    /* color: #000; */
+    font-family: 'D-DIN';
+    font-size: 30px;
+    }
+
+    #sec02 .sec02-main{
+        display: block;
+    }
+
+    #sec03{
+
+        margin-bottom: 200px;
+    }
+    
+
+    
+
+
+
+
+ 
+
+}

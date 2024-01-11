@@ -1,0 +1,175 @@
+@charset 'utf-8';
+
+@media (max-width:450px){
+    /* 모바일 헤더 */
+        .desk{
+        display: none;
+       }
+    
+       .mobile{
+        position: static;
+        display: flex;
+        justify-content: start;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+       }
+    
+       .mobile .logoM{
+        display: block;
+        width: 50px;
+        margin-right: 330px;
+       }
+    
+       .mobile #navbtn{
+        display: block;
+        width: 25px;
+        margin-top: 5px;
+       }
+    
+       .mobile #navbtnC{
+        width: 25px;
+        margin-top: 5px;
+       }
+    
+       #navM{
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        padding: 50px;
+       }
+    
+       #navM ul li{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: right;
+        border-bottom: 1px solid #dadada;
+       }
+    
+       #navM ul li:last-child{
+        padding-bottom: 0;
+        border-bottom: none;
+        }
+    
+        .mobile h2{
+        display: block;
+        color: #fff;
+        }
+    
+    
+    
+        /* 모바일 sec01 시작 */
+
+        #sec01 h2{
+            font-size: 15px;
+        }
+
+        #sec01{
+            margin-bottom: 40px;
+        }
+
+        
+        /* 모바일 sec02 시작 */
+        #sec02{
+            margin-bottom: 50px;
+        }
+        #sec02 h2{
+            font-size: 13px;
+        }
+
+    
+
+        /* 모바일 sec03 시작 */
+
+        #sec03{
+            margin-bottom: 20px;
+        }
+        #sec03 ul{
+            margin-left: 30px;
+        }
+
+        #sec03 .child{
+            font-size: 15px;
+            width: 100px;
+            padding: 5px;
+            margin-left: 35%;
+        }
+        #nine .pr-nine{
+            font-size: 15px;
+            width: 70px;
+            margin-left: 32%;
+            margin-bottom: 15px;
+            
+        }
+
+
+        #sec03-1 .model-color ul{
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            
+        }
+
+        #sec03-1 .model-color ul li{
+            width: 100%;
+            margin-left: 20px;
+            
+        }
+
+        #sec03-1 .model-color ul li:last-child{
+            margin-right: 0;
+        }
+
+        #sec03-1 .model-color ul .color-swp, #sec03-1 .model-color ul .color-isg,#sec03-1 .model-color ul .color-d2u,#sec03-1 .model-color ul .color-p2m,#sec03-1 .model-color ul .color-abp{
+            width: 30px;
+            height: 30px;
+            margin-bottom: 100px;
+        }
+
+        #sec03-1 .model-color ul li p{
+            width: 48%;
+            font-size: 12px;
+            
+            
+        }
+
+        #sec03-1 .model-color {
+            margin-left: 0;
+            margin: 0 auto;
+        }
+
+        #gravity ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .last-con{
+            margin-bottom: 0px;
+        }
+
+        .en-img{
+            width: 90%;
+        }
+
+        
+        
+        
+       
+
+
+
+
+        
+
+        
+            
+        
+
+
+
+      
+    
+
+        
+
+
+}
